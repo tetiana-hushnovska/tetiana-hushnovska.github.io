@@ -1,0 +1,1847 @@
+@import 'base/base';
+@import 'base/font';
+@import 'base/mixins';
+@import 'base/varaibles';
+
+.header {
+    @include box (100%, 650px);
+    background-image: url("../images/Background-header.png");
+    padding-top: 40px;
+
+    background: {
+        size: cover;
+        repeat: no-repeat;
+        position: center;
+    }
+
+    &-top {
+        @include box (901px, 36px);
+        margin: 0 auto;
+        display: flex;
+
+        &-name {
+            width: 50%;
+            @extend %font-main;
+            line-height: 24px;
+        }
+
+        &-buttoms {
+            width: 50%;
+            display: flex;
+            justify-content: end;
+
+            &-login {
+                width: 44px;
+                margin-right: 20px;
+                @extend %font-buttom;
+                line-height: 36px;
+            }
+
+            &-signin {
+                width: 85px;
+                margin-right: 15px;
+                @extend %font-buttom;
+                line-height: 36px;
+                text-align: center;
+                border: 2px solid white;
+                border-radius: 40px;
+            }
+        }
+    }
+
+    &-info {
+        @include box (470px, 180px);
+        margin: 145px auto 0;
+
+        &-main {
+            height: 126px;
+            @extend %font-header;
+            line-height: 61px;
+            text-align: center;
+        }
+
+        &-small {
+            height: 25px;
+            @extend %font-small;
+            line-height: 24px;
+            text-align: center;
+            margin-top: 23px;
+        }
+    }
+
+    &-button {
+        @include box (225px, 40px);
+        background-color: #FF4E50;
+        margin: 29px auto;
+        border-radius: 40px;
+        @extend %font-button;
+        line-height: 40px;
+        text-align: center;
+    }
+}
+
+.steps {
+    @include box (960px, 460px);
+    margin: 90px auto 0;
+
+    &-name {
+        @include box (960px, 32px);
+        font-family: 'Montserrat', sans-serif;
+        @include font (26px, 700, black);
+        line-height: 32px;
+        text-align: center;
+        letter-spacing: 1.8px;
+    }
+
+    &-block {
+        @include box (100%, 400px);
+        margin-top: 33px;
+        display: flex;
+
+        &-one {
+            @include box (270px, 390px);
+            margin-right: 20px;
+            background-image: url(../images/Step\ 1\ image.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            @extend %padding-step;
+            border-radius: 10px;
+
+            &-button {
+                @include box (70px, 20px);
+                background-color: #FF4E50;
+                border-radius: 40px;
+                margin-top: 219px;
+                @include font (10px, 400, white);
+                @extend %main-font;
+                line-height: 20px;
+                text-align: center;
+                letter-spacing: 1px;
+            }
+
+            &-info {
+                @include box (250px, 58px);
+                margin-top: 18px;
+                @include font (24px, 700, white);
+                @extend %main-font;
+                line-height: 25px;
+                text-align: left;
+                letter-spacing: 1px;
+            }
+
+            &-small {
+                @include box (250px, 44px);
+                margin-top: 15px;
+                @include font (14px, 300, white);
+                @extend %extra-font;
+                line-height: 14px;
+                text-align: left;
+            }
+        }
+
+        &-two {
+            @include box (270px, 390px);
+            margin-right: 20px;
+            background-image: url(../images/Step\ 2.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            @extend %padding-step;
+            border-radius: 10px;
+
+            &-button {
+                @include box (70px, 20px);
+                background-color: #FF4E50;
+                border-radius: 40px;
+                margin-top: 250px;
+                @include font (10px, 400, white);
+                @extend %main-font;
+                line-height: 20px;
+                text-align: center;
+                letter-spacing: 1px;
+            }
+
+            &-info {
+                @include box (250px, 29px);
+                margin-top: 18px;
+                @include font (24px, 700, white);
+                @extend %main-font;
+                line-height: 25px;
+                text-align: left;
+                letter-spacing: 1px;
+            }
+
+            &-small {
+                @include box (250px, 44px);
+                margin-top: 15px;
+                @include font (14px, 300, white);
+                @extend %extra-font;
+                line-height: 14px;
+                text-align: left;
+            }
+        }
+
+        &-three {
+            @include box (270px, 390px);
+            margin-right: 20px;
+            background-image: url(../images/Step\ 3.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            @extend %padding-step;
+            border-radius: 10px;
+
+            &-button {
+                @include box (70px, 20px);
+                background-color: #FF4E50;
+                border-radius: 40px;
+                margin-top: 250px;
+                @include font (10px, 400, white);
+                @extend %main-font;
+                line-height: 20px;
+                text-align: center;
+                letter-spacing: 1px;
+            }
+
+            &-info {
+                @include box (250px, 29px);
+                margin-top: 18px;
+                @include font (24px, 700, white);
+                @extend %main-font;
+                line-height: 25px;
+                text-align: left;
+                letter-spacing: 1px;
+            }
+
+            &-small {
+                @include box (250px, 44px);
+                margin-top: 15px;
+                @include font (14px, 300, white);
+                @extend %extra-font;
+                line-height: 14px;
+                text-align: left;
+            }
+        }
+    }
+}
+
+.partner {
+    @include box (100%, 365px);
+    margin-top: 83px;
+
+    &-name {
+        @include box (940px, 32px);
+        margin: 0 auto 0;
+        font-family: 'Montserrat', sans-serif;
+        @include font (26px, 700, black);
+        line-height: 32px;
+        text-align: center;
+        letter-spacing: 1.3px;
+    }
+
+    &-profile {
+        @include box (960px, 205px);
+        margin: 35px auto 0;
+        display: flex;
+
+        &-one {
+            @include box (221px, 205px);
+            margin-right: 15px;
+
+            &-img {
+                @include box (120px, 120px);
+                margin-left: 50px;
+                z-index: -1;
+                position: relative;
+            }
+
+            &-img::after {
+                content: "\f001";
+                @include box (32px, 32px);
+                background-color: #FF4E50;
+                border-radius: 50%;
+                z-index: 1;
+                position: absolute;
+                right: 0;
+                bottom: 4px;
+                font: var(--fa-font-solid);
+                color: white;
+                text-align: center;
+                line-height: 32px;
+            }
+
+            &-info {
+                @include box (221px, 18px);
+                @extend %main-font;
+                @include font (14px, 700, black);
+                text-align: center;
+                line-height: 18px;
+                margin-top: 12px;
+                letter-spacing: 1.3px;
+            }
+
+            &-small {
+                @include box (221px, 38px);
+                @extend %extra-font;
+                @include font (14px, 300, black);
+                text-align: center;
+                line-height: 14px;
+                margin-top: 22px;
+            }
+        }
+
+        &-two {
+            @include box (221px, 205px);
+            margin-right: 15px;
+
+            &-img {
+                @include box (120px, 120px);
+                margin-left: 50px;
+                z-index: -1;
+                position: relative;
+            }
+
+            &-img::after {
+                content: "\f1fc";
+                @include box (32px, 32px);
+                background-color: #19D4CA;
+                border-radius: 50%;
+                z-index: 1;
+                position: absolute;
+                right: 0;
+                bottom: 4px;
+                font: var(--fa-font-solid);
+                color: white;
+                text-align: center;
+                line-height: 32px;
+            }
+
+            &-info {
+                @include box (221px, 18px);
+                @extend %main-font;
+                @include font (14px, 700, black);
+                text-align: center;
+                line-height: 18px;
+                margin-top: 12px;
+                letter-spacing: 1.3px;
+            }
+
+            &-small {
+                @include box (221px, 38px);
+                @extend %extra-font;
+                @include font (14px, 300, black);
+                text-align: center;
+                line-height: 14px;
+                margin-top: 22px;
+            }
+        }
+
+        &-three {
+            @include box (221px, 205px);
+            margin-right: 15px;
+
+            &-img {
+                @include box (120px, 120px);
+                margin-left: 50px;
+                z-index: -1;
+                position: relative;
+            }
+
+            &-img::after {
+                content: "\f030";
+                @include box (32px, 32px);
+                background-color: #FFA710;
+                border-radius: 50%;
+                z-index: 1;
+                position: absolute;
+                right: 0;
+                bottom: 4px;
+                font: var(--fa-font-solid);
+                color: white;
+                text-align: center;
+                line-height: 32px;
+            }
+
+            &-info {
+                @include box (221px, 18px);
+                @extend %main-font;
+                @include font (14px, 700, black);
+                text-align: center;
+                line-height: 18px;
+                margin-top: 12px;
+                letter-spacing: 1.3px;
+            }
+
+            &-small {
+                @include box (221px, 38px);
+                @extend %extra-font;
+                @include font (14px, 300, black);
+                text-align: center;
+                line-height: 14px;
+                margin-top: 22px;
+            }
+        }
+
+        &-four {
+            @include box (221px, 205px);
+            margin-right: 19px;
+
+            &-img {
+                @include box (120px, 120px);
+                margin-left: 50px;
+                z-index: -1;
+                position: relative;
+            }
+
+            &-img::after {
+                content: "\f072";
+                @include box (32px, 32px);
+                background-color: #667DF3;
+                border-radius: 50%;
+                z-index: 1;
+                position: absolute;
+                right: 0;
+                bottom: 4px;
+                font: var(--fa-font-solid);
+                color: white;
+                text-align: center;
+                line-height: 32px;
+            }
+
+            &-info {
+                @include box (221px, 18px);
+                @extend %main-font;
+                @include font (14px, 700, black);
+                text-align: center;
+                line-height: 18px;
+                margin-top: 12px;
+                letter-spacing: 1.3px;
+            }
+
+            &-small {
+                @include box (221px, 38px);
+                @extend %extra-font;
+                @include font (14px, 300, black);
+                text-align: center;
+                line-height: 14px;
+                margin-top: 22px;
+            }
+        }
+    }
+
+    &-button {
+        @include box (170px, 40px);
+        @extend %main-font;
+        @include font (14px, 700, #FF4E50);
+        margin: 35px auto 0;
+        border: 2px solid #FF4E50;
+        border-radius: 40px;
+        line-height: 40px;
+        text-align: center;
+    }
+}
+
+.ideas {
+    @include box (100%, 1031px);
+    margin-top: 85px;
+
+    &-name {
+        @include box (940px, 32px);
+        font-family: 'Montserrat', sans-serif;
+        @include font (26px, 700, black);
+        line-height: 32px;
+        text-align: center;
+        letter-spacing: 1px;
+        margin: 0 auto 0;
+    }
+
+    &-wraper {
+        @include box (960px, 960px);
+        margin: 20px auto 0;
+
+        &-top {
+            @include box (100%, 320px);
+            display: flex;
+
+            &-sport {
+                @include box (300px, 300px);
+                background-image: url("../images/Sport.png");
+                margin: 10px 7px 5px 10px;
+                background-repeat: no-repeat;
+                @extend %main-font;
+                @include font (22px, 700, white);
+                line-height: 310px;
+                text-align: center;
+            }
+
+
+            &-health {
+                @include box (300px, 300px);
+                background-image: url("../images/Health.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+                margin: 10px 7px 5px 10px;
+                @extend %main-font;
+                @include font (22px, 700, white);
+                line-height: 310px;
+                text-align: center;
+            }
+
+            &-extreme {
+                @include box (300px, 300px);
+                background-image: url("../images/Extreme.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+                margin: 10px 7px 5px 10px;
+
+                &-text {
+                    @extend %main-font;
+                    @include font (22px, 700, white);
+                    line-height: 27px;
+                    text-align: center;
+                    margin-top: 128px;
+                }
+            }
+        }
+
+        &-middle {
+            @include box (100%, 320px);
+            display: flex;
+
+            &-games {
+                @include box (297px, 300px);
+                background-image: url("../images/Games.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+                margin: 10px 7px 5px 10px;
+                @extend %main-font;
+                @include font (22px, 700, white);
+                line-height: 310px;
+                text-align: center;
+            }
+
+            &-culture {
+                @include box (620px, 300px);
+                background-image: url("../images/Culture.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+                margin: 10px 7px 5px 10px;
+                @extend %main-font;
+                @include font (22px, 700, white);
+                line-height: 310px;
+                text-align: center;
+            }
+        }
+
+        &-bottom {
+            @include box (100%, 320px);
+            display: flex;
+
+            &-relax {
+                @include box (616px, 300px);
+                background-image: url("../images/Relax.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+                margin: 10px;
+                @extend %main-font;
+                @include font (22px, 700, white);
+                line-height: 310px;
+                text-align: center;
+            }
+
+            &-travel {
+                @include box (300px, 300px);
+                background-image: url("../images/Travel.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+                margin: 10px;
+                @extend %main-font;
+                @include font (22px, 700, white);
+                line-height: 310px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.search {
+    @include box (100%, 158px);
+    margin-top: 77px;
+
+    &-name {
+        @include box (940px, 32px);
+        font-family: 'Montserrat', sans-serif;
+        @include font (26px, 700, black);
+        line-height: 32px;
+        text-align: center;
+        letter-spacing: 1px;
+        margin: 0 auto 0;
+    }
+
+    &-info {
+        @include box (940px, 24px);
+        @extend %extra-font;
+        @include font (18px, 300, black);
+        line-height: 24px;
+        text-align: center;
+        margin: 45px auto 0;
+    }
+
+    &-field {
+        @include box (482px, 40px);
+        margin: 23px auto 0;
+
+        form {
+            display: inline-flex;
+        }
+
+        input {
+            display: block;
+            @include box (299px, 40px);
+            border: 1px solid #F2F2F2;
+            background-color: white;
+            @extend %extra-font;
+            @include font (14px, 300, #F2F2F2);
+            margin-right: 8px;
+        }
+
+        button {
+            display: block;
+            @include box (172px, 40px);
+            background-color: #FF4E50;
+            border-radius: 40px;
+            border-color: #FF4E50;
+            @extend %main-font;
+            @include font (14px, 700, white);
+            color: white;
+        }
+    }
+}
+
+.footer {
+    @include box (100%, 260px);
+    padding-left: 250px;
+    margin-top: 95px;
+    display: flex;
+    border-top: 3px solid #FF4E50;
+
+    &-name {
+        @include box (141px, 100%);
+        @extend %main-font;
+        @include font (16px, 400, #FF4E50);
+        padding-top: 40px;
+        margin-right: 90px;
+    }
+
+    &-company {
+        @include box (139px, 100%);
+        padding-top: 40px;
+        margin-right: 100px;
+
+        li {
+            @include box (139px, 26px);
+            margin-bottom: 0.5px;
+        }
+
+        &-name {
+            @extend %main-font;
+            @include font (14px, 700, #444444);
+        }
+
+        &-list {
+            @extend %extra-font;
+            @include font (14px, 300, #999999);
+        }
+    }
+
+    &-partners {
+        @include box (104px, 100%);
+        padding-top: 35px;
+        @extend %main-font;
+        @include font (14px, 700, #444444);
+        margin-right: 240px;
+    }
+
+    &-logo {
+        @include box (110px, 100%);
+        padding-top: 47px;
+        @extend %main-font;
+        @include font (10px, 700, #CCCCCC);
+        text-align: end;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1300px) {
+    .header {
+        @include box (1280px, 650px);
+    }
+
+    .steps,
+    .ideas,
+    .partner,
+    .search,
+    .footer {
+        padding-left: 0px;
+    }
+}
+
+@media screen and (min-width: 1090px) and (max-width: 1199px) {
+    .header {
+        @include box (1175px, 650px);
+    }
+
+    .steps,
+    .ideas,
+    .partner,
+    .search,
+    .footer {
+        padding-left: 140px;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1089px) {
+    .header {
+        @include box (1030px, 700px);
+    }
+
+    .steps,
+    .ideas,
+    .partner,
+    .search,
+    .footer {
+        padding-left: 0;
+    }
+
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 899px) {
+    .header {
+        @include box (880px, 700px);
+
+        &-top {
+            @include box (750px, 36px);
+        }
+    }
+
+    .steps {
+        @include box (690px, 460px);
+
+        &-name {
+            @include box (690px, 32px);
+        }
+
+        &-block {
+            @include box (690px, 400px);
+
+            &-one {
+                @include box (260px, 390px);
+                margin-right: 10px;
+
+                &-info {
+                    @include box (230px, 58px);
+                }
+
+                &-small {
+                    @include box (230px, 44px);
+                }
+            }
+
+            &-two {
+                @include box (260px, 390px);
+                margin-right: 10px;
+
+                &-info {
+                    @include box (230px, 29px);
+                }
+
+                &-small {
+                    @include box (230px, 44px);
+                }
+            }
+
+            &-three {
+                @include box (260px, 390px);
+
+                &-info {
+                    @include box (230px, 29px);
+                }
+
+                &-small {
+                    @include box (230px, 44px);
+                }
+            }
+        }
+    }
+
+    .partner {
+        @include box (100%, 365px);
+        padding-left: 65px;
+
+        &-name {
+            @include box (690px, 32px);
+        }
+
+        &-profile {
+
+            &-one {
+                @include box (181px, 205px);
+                margin-right: 15px;
+
+                &-img {
+                    margin-left: 30px;
+                }
+
+                &-info {
+                    @include box (181px, 18px);
+                }
+
+                &-small {
+                    @include box (181px, 38px);
+                }
+            }
+
+            &-two {
+                @include box (181px, 205px);
+                margin-right: 15px;
+
+                &-img {
+                    margin-left: 30px;
+                }
+
+                &-info {
+                    @include box (181px, 18px);
+                }
+
+                &-small {
+                    @include box (181px, 38px);
+                }
+            }
+
+            &-three {
+                @include box (181px, 205px);
+                margin-right: 15px;
+
+                &-img {
+                    margin-left: 30px;
+                }
+
+                &-info {
+                    @include box (181px, 18px);
+                }
+
+                &-small {
+                    @include box (181px, 38px);
+                }
+            }
+
+            &-four {
+                @include box (181px, 205px);
+                margin-right: 15px;
+
+                &-img {
+                    margin-left: 30px;
+                }
+
+                &-info {
+                    @include box (181px, 18px);
+                }
+
+                &-small {
+                    @include box (181px, 38px);
+                }
+            }
+        }
+
+        &-button {
+            margin-left: 315px;
+        }
+    }
+
+    .ideas {
+        padding-left: 65px;
+
+        &-name {
+            @include box (730px, 32px);
+        }
+
+        &-wraper {
+            @include box (960px, 990px);
+
+            &-top {
+
+                &-sport {
+                    @include box (250px, 310px);
+                }
+
+
+                &-health {
+                    @include box (250px, 310px);
+                    background-size: cover;
+                }
+
+                &-extreme {
+                    @include box (250px, 310px);
+                    background-size: cover;
+                }
+            }
+
+            &-middle {
+
+                &-games {
+                    @include box (250px, 310px);
+                    background-size: cover;
+                }
+
+                &-culture {
+                    @include box (520px, 310px);
+                    background-size: cover;
+                }
+            }
+
+            &-bottom {
+
+                &-relax {
+                    @include box (520px, 310px);
+                    background-size: cover;
+                }
+
+                &-travel {
+                    @include box (250px, 310px);
+                    background-size: cover;
+                }
+            }
+        }
+    }
+
+    .search {
+
+        &-name {
+            @include box (730px, 32px);
+        }
+
+        &-info {
+            @include box (730px, 24px);
+        }
+
+        &-field {
+            margin-left: 143px;
+        }
+    }
+
+    .footer {
+        padding-left: 65px;
+
+        &-name {
+            margin-right: 70px;
+        }
+
+        &-company {
+            margin-right: 70px;
+        }
+
+        &-partners {
+            margin-right: 120px;
+        }
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+    .header {
+        @include box (768px, 650px);
+        
+
+        &-top {
+            @include box (668px, 36px);
+            display: flex;
+
+            &-name {
+                width: 50%;
+                @extend %font-main;
+                line-height: 24px;
+            }
+
+            &-buttoms {
+                width: 50%;
+                display: flex;
+                justify-content: end;
+
+                &-login {
+                    width: 44px;
+                    margin-right: 20px;
+                    @extend %font-buttom;
+                    line-height: 36px;
+                }
+
+                &-signin {
+                    width: 85px;
+                    margin-right: 15px;
+                    @extend %font-buttom;
+                    line-height: 36px;
+                    text-align: center;
+                    border: 2px solid white;
+                    border-radius: 40px;
+                }
+            }
+        }
+
+        &-info {
+            @include box (470px, 180px);
+            margin-left: 180px;
+            margin-top: 145px;
+
+            &-main {
+                height: 126px;
+                @extend %font-header;
+                line-height: 61px;
+                text-align: center;
+            }
+
+            &-small {
+                height: 25px;
+                @extend %font-small;
+                line-height: 24px;
+                text-align: center;
+                margin-top: 28px;
+            }
+        }
+
+        &-button {
+            @include box (225px, 40px);
+            background-color: #FF4E50;
+
+            margin: {
+                top: 28px;
+                left: 285px;
+            }
+
+            border-radius: 40px;
+            @extend %font-button;
+            line-height: 40px;
+            text-align: center;
+        }
+    }
+
+    .steps {
+        @include box (768px, 460px);
+        margin-top: 95px;
+        padding-left: 10px;
+
+        &-name {
+            @include box (748px, 32px);
+            font-family: 'Montserrat', sans-serif;
+            @include font (26px, 700, black);
+            line-height: 32px;
+            text-align: center;
+            letter-spacing: 1.8px;
+        }
+
+        &-block {
+            @include box (100%, 400px);
+            margin-top: 35px;
+            display: flex;
+
+            &-one {
+                @include box (236px, 390px);
+                padding-left: 20px;
+
+                &-button {
+                    margin-top: 205px;
+                }
+
+                &-info {
+                    @include box (196px, 28px);
+                    line-height: 14px;
+                    margin-top: 48px;
+                }
+
+                &-small {
+                    @include box (196px, 44px);
+                    margin-top: 15px;
+                    text-align: left;
+                }
+            }
+
+            &-two {
+                @include box (236px, 390px);
+                padding-left: 20px;
+
+                &-button {
+                    margin-top: 255px;
+                }
+
+                &-info {
+                    @include box (196px, 29px);
+                    margin-top: 14px;
+                    line-height: 14px;
+                }
+
+                &-small {
+                    @include box (196px, 44px);
+                    margin-top: 15px;
+                }
+            }
+
+            &-three {
+                @include box (236px, 390px);
+                padding-left: 20px;
+
+                &-button {
+                    margin-top: 205px;
+                }
+
+                &-info {
+                    @include box (196px, 29px);
+                    margin-top: 18px;
+                }
+
+                &-small {
+                    @include box (196px, 44px);
+                }
+            }
+        }
+    }
+
+    .partner {
+        @include box (768px, 365px);
+        margin-top: 94px;
+        padding-left: 10px;
+
+        &-name {
+            @include box (748px, 32px);
+        }
+
+        &-profile {
+            @include box (512px, 205px);
+            margin-top: 32px;
+            margin-left: 128px;
+            display: flex;
+            flex-wrap: wrap;
+
+            &-one {
+                @include box (236px, 205px);
+                margin-right: 20px;
+
+                &-img {
+                    @include box (126px, 126px);
+                    margin-left: 55px;
+                }
+
+                &-img::after {
+                    right: 6px;
+                    bottom: 6px;
+                }
+
+                &-info {
+                    @include box (236px, 18px);
+                    margin-top: 14px;
+                }
+
+                &-small {
+                    @include box (236px, 38px);
+                    margin-top: 12px;
+                }
+            }
+
+            &-two {
+                @include box (236px, 205px);
+                margin-right: 20px;
+
+                &-img {
+                    @include box (126px, 126px);
+                    margin-left: 55px;
+                }
+
+                &-img::after {
+                    right: 6px;
+                    bottom: 6px;
+                }
+
+                &-info {
+                    @include box (236px, 18px);
+                    margin-top: 14px;
+                }
+
+                &-small {
+                    @include box (236px, 38px);
+                    margin-top: 12px;
+                }
+            }
+
+            &-three {
+                @include box (236px, 205px);
+                margin-right: 20px;
+
+                &-img {
+                    @include box (126px, 126px);
+                    margin-left: 55px;
+                }
+
+                &-img::after {
+                    right: 6px;
+                    bottom: 6px;
+                }
+
+                &-info {
+                    @include box (236px, 18px);
+                    margin-top: 14px;
+                }
+
+                &-small {
+                    @include box (236px, 38px);
+                    margin-top: 12px;
+                }
+            }
+
+            &-four {
+                @include box (236px, 205px);
+                margin-right: 20px;
+
+                &-img {
+                    @include box (126px, 126px);
+                    margin-left: 55px;
+                }
+
+                &-img::after {
+                    right: 6px;
+                    bottom: 6px;
+                }
+
+                &-info {
+                    @include box (236px, 18px);
+                    margin-top: 14px;
+                }
+
+                &-small {
+                    @include box (236px, 38px);
+                    line-height: 12px;
+                }
+            }
+        }
+
+        &-button {
+            @include box (180px, 40px);
+            margin-left: 284px;
+            margin-top: 40px;
+        }
+    }
+
+    .ideas {
+        @include box (768px, 1031px);
+        padding-left: 10px;
+        margin-top: 94px;
+
+        &-name {
+            @include box (748px, 32px);
+        }
+
+        &-wraper {
+            @include box (748px, 990px);
+            margin-left: -10px;
+            margin-top: 45px;
+
+            &-top {
+                @include box (100%, 330px);
+                display: flex;
+                
+
+                &-sport {
+                    @include box (236px, 310px);
+                    line-height: 27px;
+                    letter-spacing: 2px;
+                    word-spacing: 4px;
+                    align-items: center;
+                    display: flex;
+                }
+
+
+                &-health {
+                    @include box (236px, 310px);
+                    margin: 10px;
+                    background-size: cover;
+                    line-height: 27px;
+                    display: flex;
+                    align-items: center;
+                    letter-spacing: 2px;
+                    word-spacing: 4px;
+                }
+
+                &-extreme {
+                    @include box (236px, 310px);
+                    background-size: cover;
+                }
+            }
+
+            &-middle {
+                @include box (100%, 330px);
+                display: flex;
+
+                &-games {
+                    @include box (236px, 310px);
+                    background-size: cover;
+                }
+
+                &-culture {
+                    @include box (492px, 310px);
+                    background-size: cover;
+                }
+            }
+
+            &-bottom {
+                @include box (100%, 330px);
+                display: flex;
+
+                &-relax {
+                    @include box (492px, 310px);
+                    background-size: cover;
+                }
+
+                &-travel {
+                    @include box (236px, 310px);
+                    background-size: cover;
+                }
+            }
+        }
+    }
+
+    .search {
+        @include box (768, 158px);
+        padding-left: 10px;
+        margin-top: 94px;
+
+        &-name {
+            @include box (748px, 32px);
+        }
+
+        &-info {
+            @include box (748px, 24px);
+            margin-top: 43px;
+        }
+
+        &-field {
+            @include box (482px, 40px);
+            margin-top: 23px;
+            margin-left: 133px;
+
+            form {
+                display: inline-flex;
+            }
+
+            input {
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .footer {
+        @include box (768, 260px);
+        padding-left: 39px;
+
+        &-name {
+            @include box (191px, 100%);
+            padding-top: 38px;
+            margin-right: 108px;
+        }
+
+        &-company {
+            @include box (114px, 100%);
+            padding-top: 38px;
+            margin-right: 56px;
+
+            li {
+                @include box (139px, 26px);
+                margin-bottom: 0.5px;
+            }
+
+            &-name {
+                @extend %main-font;
+                @include font (14px, 700, #444444);
+            }
+
+            &-list {
+                @extend %extra-font;
+                @include font (14px, 300, #999999);
+            }
+        }
+
+        &-partners {
+            @include box (64px, 100%);
+            padding-top: 38px;
+            margin-right: 100px;
+        }
+
+        &-logo {
+            @include box (110px, 100%);
+            padding-top: 38px;
+            text-align: end;
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .header {
+        @include box (320px, 540px);
+        padding-top: 20px;
+
+        &-top {
+            @include box (153px, 36px);
+            margin-left: 84px;
+            flex-direction: column-reverse;
+
+            &-name {
+                width: 0;
+                line-height: 24px;
+            }
+
+            &-buttoms {
+                width: 100%;
+                justify-content: center;
+                margin-bottom: 97px;
+            }
+        }
+
+        &-info {
+            @include box (281px, 194px);
+            margin-left: 20px;
+            margin-top: 27px;
+
+            &-main {
+                height: 74px;
+                line-height: normal;
+                text-align: center;
+                font-size: 30px;
+                letter-spacing: normal;
+            }
+
+            &-small {
+                height: 49px;
+                line-height: 24px;
+                text-align: center;
+                margin-top: 5.5px;
+                letter-spacing: normal;
+                font-size: 18px;
+            }
+        }
+
+        &-button {
+            @include box (280px, 40px);
+
+            margin: {
+                top: 28px;
+                left: 22px;
+            }
+
+            border-radius: 40px;
+            line-height: 40px;
+            text-align: center;
+        }
+    }
+
+    .steps {
+        @include box (320px, 460px);
+        margin-top: 35px;
+        padding-left: 10px;
+
+        &-name {
+            @include box (320px, 27px);
+            line-height: 27px;
+            letter-spacing: -1px;
+        }
+
+        &-block {
+            @include box (300px, 400px);
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+
+            &-one {
+                @include box (280px, 240px);
+                margin-right: 0;
+                background-size: contain;
+                background-size: 300px;
+                background-repeat: no-repeat;
+                margin-bottom: 10px;
+
+                &-button {
+                    margin-top: 74px;
+                }
+
+                &-info {
+                    @include box (250px, 30px);
+                    margin-top: 35px;
+                    line-height: 13px;
+                }
+
+                &-small {
+                    margin-top: 10px;
+                    font-size: 14px;
+                    line-height: 12px;
+                    text-align: left;
+                }
+            }
+
+            &-two {
+                @include box (300px, 240px);
+                margin-right: 0;
+                background-size: contain;
+                background-size: 93%;
+                margin-bottom: 10px;
+
+                &-button {
+                    margin-top: 95px;
+                }
+
+                &-info {
+                    @include box (250px, 29px);
+                    margin-top: 20px;
+                    @include font (24px, 700, white);
+                    line-height: 22px;
+                    text-align: left;
+                    letter-spacing: 1px;
+                }
+
+                &-small {
+                    @include box (250px, 44px);
+                    margin-top: 15px;
+                    @include font (14px, 300, white);
+                    line-height: 14px;
+                    text-align: left;
+                }
+            }
+
+            &-three {
+                @include box (280px, 240px);
+                margin-right: 0;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                border-radius: 10px;
+
+                &-button {
+                    margin-top: 65px;
+                }
+
+                &-info {
+                    margin-top: 35px;
+                }
+
+                &-small {
+                    margin-top: 55px;
+                }
+            }
+        }
+    }
+
+    .partner {
+        @include box (320px, 365px);
+        margin-top: 36px;
+        padding-left: 20px;
+
+        &-name {
+            @include box (300px, 54px);
+            @include font (22px, 700, black);
+            line-height: normal;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+
+        &-profile {
+            @include box (300, 205px);
+            margin-top: 11px;
+            display: flex;
+            flex-direction: column;
+            padding-left: 42px;
+
+            &-one {
+                @include box (236px, 205px);
+                margin-right: 15px;
+
+                &-img {
+                    @include box (126px, 126px);
+                    margin-left: 55px;
+                }
+
+                &-img::after {
+                    right: 6px;
+                    bottom: 6px;
+                }
+
+                &-info {
+                    margin-top: 14px;
+                    letter-spacing: normal;
+                }
+
+                &-small {
+                    @include box (238px, 38px);
+                    margin-top: 12px;
+                }
+            }
+
+            &-two {
+                @include box (236px, 205px);
+
+                &-img {
+                    @include box (126px, 126px);
+                    margin-left: 55px;
+                }
+
+                &-img::after {
+                    right: 6px;
+                    bottom: 6px;
+                }
+
+                &-info {
+                    margin-top: 14px;
+                    letter-spacing: normal;
+                }
+
+                &-small {
+                    @include box (238px, 38px);
+                    margin-top: 12px;
+                }
+            }
+
+            &-three {
+                @include box (236px, 205px);
+
+                &-img {
+                    @include box (126px, 126px);
+                    margin-left: 55px;
+                }
+
+                &-img::after {
+                    right: 6px;
+                    bottom: 6px;
+                }
+
+                &-info {
+                    margin-top: 14px;
+                    letter-spacing: normal;
+                }
+
+                &-small {
+                    @include box (236px, 38px);
+                    margin-top: 12px;
+                }
+            }
+
+            &-four {
+                @include box (236px, 205px);
+
+                &-img {
+                    @include box (126px, 126px);
+                    margin-left: 55px;
+                }
+
+                &-img::after {
+                    right: 6px;
+                    bottom: 6px;
+                }
+
+                &-info {
+                    margin-top: 14px;
+                    letter-spacing: normal;
+                }
+
+                &-small {
+                    @include box (236px, 38px);
+                    margin-top: 12px;
+                }
+            }
+        }
+
+        &-button {
+            @include box (280px, 40px);
+            margin-left: 10px;
+        }
+    }
+
+    .ideas {
+        @include box (320px, 931px);
+        padding-left: 10px;
+        margin-top: 35px;
+
+        &-name {
+            @include box (280px, 54px);
+            @include font (22px, 700, black);
+            line-height: normal;
+            letter-spacing: 1.8px;
+            word-spacing: 3px;
+            margin-left: 25px;
+        }
+
+        &-wraper {
+            @include box (300px, 790px);
+            margin-left: 0;
+            margin-top: 33px;
+
+            &-top {
+                @include box (300px, 330px);
+                display: flex;
+                flex-direction: column;
+
+                &-sport {
+                    @include box (300px, 120px);
+                    margin: 0 0 10px 0;
+                    line-height: 120px;
+                }
+
+
+                &-health {
+                    @include box (300px, 120px);
+                    background-size: cover;
+                    background-position: center;
+                    margin: 0 0 10px 0;
+                    line-height: 120px;
+                }
+
+                &-extreme {
+                    @include box (300px, 120px);
+                    background-size: cover;
+                    background-position: center;
+                    margin: 0 0 10px 0;
+
+                    &-text {
+                        margin-top: 33px;
+                    }
+                }
+            }
+
+            &-middle {
+                @include box (300px, 230px);
+                display: flex;
+                flex-direction: column;
+
+                &-games {
+                    @include box (300px, 120px);
+                    background-size: cover;
+                    background-position: center;
+                    margin: 0 0 10px 0;
+                    line-height: 120px;
+                }
+
+                &-culture {
+                    @include box (300px, 120px);
+                    background-size: cover;
+                    background-position: center;
+                    margin: 0 0 10px 0;
+                    line-height: 120px;
+                }
+            }
+
+            &-bottom {
+                @include box (300px, 230px);
+                display: flex;
+                flex-direction: column;
+
+                &-relax {
+                    @include box (300px, 120px);
+                    background-size: cover;
+                    background-position: center;
+                    margin: 0 0 10px 0;
+                    line-height: 120px;
+                }
+
+                &-travel {
+                    @include box (300px, 120px);
+                    background-size: cover;
+                    margin: 0 0 10px 0;
+                    line-height: 120px;
+                }
+            }
+        }
+    }
+
+    .search {
+        @include box (280px, 192px);
+        padding-left: 0;
+        margin-left: 20px;
+        margin-top: 35px;
+
+        &-name {
+            @include box (280px, 54px);
+            line-height: normal;
+            letter-spacing: 1px;
+        }
+
+        &-info {
+            @include box (280px, 24px);
+            text-align: center;
+            margin-top: 45px;
+            letter-spacing: -0.3px;
+        }
+
+        &-field {
+            @include box (280px, 40px);
+            margin-top: 15px;
+            margin-left: 0;
+
+            form {
+                display: block;
+            }
+
+            input {
+                display: block;
+                @include box (280px, 40px);
+            }
+
+            button {
+                display: block;
+                @include box (280px, 40px);
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .footer {
+        @include box (320px, 226px);
+        padding-left: 20px;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+
+        &-name {
+            @include box (119px, 20px);
+            padding-top: 21px;
+            margin-right: 0;
+            margin-left: 81px;
+        }
+
+        &-company {
+            @include box (280px, 70px);
+            padding-top: 0;
+            margin-right: 0;
+            margin-top: 13px;
+
+            li {
+                @include box (70px, 26px);
+                margin-bottom: 0.5px;
+                text-align: center;
+                display: inline-block;
+
+                &-name {
+                    display: block;
+                    width: 280px;
+                }
+
+                &-list {
+                    width: 70px;
+                }
+            }
+        }
+
+        &-partners {
+            @include box (280px, 17px);
+            padding-top: 0;
+            margin-right: 0px;
+            text-align: center;
+            margin-top: 6px;
+        }
+
+        &-logo {
+            @include box (110px, 35px);
+            padding-top: 0px;
+            text-align: center;
+            margin-left: 85px;
+            margin-top: 14px;
+        }
+    }
+}
